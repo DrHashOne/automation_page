@@ -8,7 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
+    <!-- Favicon -->
+    <link rel="icon" href="https://raw.githubusercontent.com/DrHashOne/automation_page/d2525ed278af0c246f6b413ac75e387cc185b74d/assets/logoVoltmatix.svg" type="image/svg+xml">
+    <style type="text/tailwindcss">
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f0f4f8; /* Light background */
@@ -37,6 +39,45 @@
             @apply text-blue-600 text-2xl;
         }
     </style>
+    <style>
+      @keyframes flip {
+        0% { transform: perspective(400px) rotateY(0deg); }
+        50% { transform: perspective(400px) rotateY(180deg); }
+        100% { transform: perspective(400px) rotateY(360deg); }
+      }
+      .logo-flip {
+        animation: flip 4s ease-in-out infinite;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+      }
+      .logo-container {
+        position: relative;
+        width: 4rem; /* Adjusted for logo size */
+        height: 4rem; /* Adjusted for logo size */
+        margin: 0 auto;
+      }
+      .logo-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        animation: flip 4s infinite linear;
+      }
+      .logo-face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 50%;
+      }
+      .logo-face.front {
+        /* Front face styles */
+      }
+      .logo-face.back {
+        /* Back face styles */
+        transform: rotateY(180deg);
+      }
+    </style>
 </head>
 <body class="antialiased">
 
@@ -52,8 +93,11 @@
                     Expertise in PLC, DCS, and Advanced Automation Systems
                 </p>
             </div>
-            <div class="flex-shrink-0 mb-4 md:mb-0">
-                <img src="https://raw.githubusercontent.com/DrHashOne/automation_page/d2525ed278af0c246f6b413ac75e387cc185b74d/assets/logoVoltmatix.svg" alt="Voltmatix Logo" class="w-16 h-16 rounded-full border-4 border-blue-400 bg-white">
+            <div class="flex-shrink-0 mb-4 md:mb-0 logo-container perspective">
+              <div class="logo-inner logo-flip w-16 h-16 relative">
+                <img src="https://raw.githubusercontent.com/DrHashOne/automation_page/d2525ed278af0c246f6b413ac75e387cc185b74d/assets/logoVoltmatix.svg" alt="Voltmatix Logo" class="logo-face front w-16 h-16 rounded-full border-4 border-blue-400 bg-white">
+                <img src="https://raw.githubusercontent.com/DrHashOne/automation_page/d2525ed278af0c246f6b413ac75e387cc185b74d/assets/logoVoltmatix.svg" alt="Voltmatix Logo" class="logo-face back w-16 h-16 rounded-full border-4 border-blue-400 bg-white absolute inset-0 transform rotate-y-180">
+              </div>
             </div>
             <button id="menu-btn" class="md:hidden text-white focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -210,18 +254,30 @@
                         <li>Telemetry Flow Meters (as per CGWA norms)</li>
                         <li>Piezometers (as per CGWA norms)</li>
                         <li>Seamless Online Connectivity with CPCB & SPCB Servers</li>
-                    </ul>
-                    <img src="https://images.unsplash.com/photo-1550592704-51664d081f9a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Environmental Monitoring Dashboard" class="mt-6 rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x200/FF6961/FFFFFF?text=Environmental+Monitoring';">
-                </div>
-
-                <div class="bg-white rounded-xl shadow-lg p-6">
-                    <h3 class="sub-section-heading">Key Monitoring Areas</h3>
-                    <ul class="space-y-4 text-gray-600">
-                        <li>
-                            <strong>1. Effluent & Sewage Monitoring:</strong> Continuous monitoring of water quality at treatment plant outlets. Automated data sharing with CPCB/SPCB servers.
-                        </li>
-                        <li>
-                            <strong>2. Emission Monitoring:</strong> Stack-mounted sensors for continuous dust and gas emission tracking. Real-time readings in mg/Nm3 or kg/hr to meet pollution norms.
+    <style>
+      @keyframes flip {
+        0% { transform: rotateY(0deg); }
+        50% { transform: rotateY(180deg); }
+        100% { transform: rotateY(360deg); }
+      }
+      .logo-container.perspective {
+        perspective: 400px;
+      }
+      .logo-inner {
+        position: relative;
+        transform-style: preserve-3d;
+        animation: flip 4s ease-in-out infinite;
+      }
+      .logo-face {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .logo-face.back {
+        transform: rotateY(180deg);
+      }
+    </style>
                         </li>
                         <li>
                             <strong>3. Ambient Air Monitoring (AQMS):</strong> Tracks air quality: SO2, NOx, CO, O3, PM, etc. Also measures temperature, wind, pressure, and rainfall.
