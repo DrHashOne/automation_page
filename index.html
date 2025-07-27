@@ -41,8 +41,8 @@
 <body class="antialiased">
 
     <!-- Header Section -->
-    <header class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-8 px-4 md:px-8 shadow-lg">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+    <header class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-8 shadow-lg">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 lg:px-8">
             <div class="text-center md:text-left mb-4 md:mb-0">
                 <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
                     <span class="block">Automation</span>
@@ -52,15 +52,38 @@
                     Expertise in PLC, DCS, and Advanced Automation Systems
                 </p>
             </div>
-            <!-- Company Logo Placeholder -->
-            <div class="flex-shrink-0">
-                <img src="https://placehold.co/150x150/0A2342/FFFFFF?text=🏭" alt="Company Logo" class="rounded-full border-4 border-blue-400">
+            <div class="flex-shrink-0 mb-4 md:mb-0">
+                <img src="https://raw.githubusercontent.com/DrHashOne/automation_page/d2525ed278af0c246f6b413ac75e387cc185b74d/assets/logoVoltmatix.svg" alt="Voltmatix Logo" class="w-16 h-16 rounded-full border-4 border-blue-400 bg-white">
             </div>
+            <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <nav id="nav-menu" class="hidden md:flex space-x-6 text-lg">
+                <a href="#solutions" class="hover:text-blue-300">Solutions</a>
+                <a href="#monitoring" class="hover:text-blue-300">Monitoring</a>
+                <a href="#it" class="hover:text-blue-300">IT Solutions</a>
+                <a href="#supplies" class="hover:text-blue-300">Supplies</a>
+                <a href="#contact" class="hover:text-blue-300">Contact</a>
+            </nav>
         </div>
     </header>
+    <div id="mobile-menu" class="md:hidden hidden bg-blue-800">
+        <a href="#solutions" class="block px-4 py-2 text-white hover:bg-blue-700">Solutions</a>
+        <a href="#monitoring" class="block px-4 py-2 text-white hover:bg-blue-700">Monitoring</a>
+        <a href="#it" class="block px-4 py-2 text-white hover:bg-blue-700">IT Solutions</a>
+        <a href="#supplies" class="block px-4 py-2 text-white hover:bg-blue-700">Supplies</a>
+        <a href="#contact" class="block px-4 py-2 text-white hover:bg-blue-700">Contact</a>
+    </div>
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    </script>
 
     <!-- Introduction Section -->
-    <section class="py-12 px-4 md:px-8 bg-gray-50">
+    <section id="intro" class="py-12 px-4 md:px-8 bg-gray-50">
         <div class="max-w-7xl mx-auto text-center">
             <h2 class="section-heading">Unlock Unprecedented Efficiency and Quality</h2>
             <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
@@ -70,7 +93,7 @@
     </section>
 
     <!-- Automation Solutions Section -->
-    <section class="py-12 px-4 md:px-8">
+    <section id="solutions" class="py-12 px-4 md:px-8">
         <div class="max-w-7xl mx-auto">
             <h2 class="section-heading text-center">Our Core Automation Solutions</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
@@ -170,7 +193,7 @@
     </section>
 
     <!-- Online Monitoring Systems Section -->
-    <section class="py-12 px-4 md:px-8 bg-blue-50">
+    <section id="monitoring" class="py-12 px-4 md:px-8 bg-blue-50">
         <div class="max-w-7xl mx-auto">
             <h2 class="section-heading text-center">Online Monitoring Systems</h2>
             <p class="text-lg text-gray-700 text-center mb-8">
@@ -216,7 +239,7 @@
     </section>
 
     <!-- IT Solutions Section -->
-    <section class="py-12 px-4 md:px-8">
+    <section id="it" class="py-12 px-4 md:px-8">
         <div class="max-w-7xl mx-auto">
             <h2 class="section-heading text-center">Intelligent IT Solutions for Your Enterprise</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
@@ -229,6 +252,7 @@
                         <li>Accounting Application</li>
                         <li>Online Examination System</li>
                         <li>Education Administration and Accounting System</li>
+                        <li>IoT-based Energy Monitoring Solution</li>
                     </ul>
                     <img src="https://images.unsplash.com/photo-1504384308090-c89947d5705a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="IT Solutions - Software Development" class="mt-6 rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x200/77DD77/FFFFFF?text=IT+Solutions+Software';">
                 </div>
@@ -255,7 +279,7 @@
     </section>
 
     <!-- Supplies Section -->
-    <section class="py-12 px-4 md:px-8 bg-blue-50">
+    <section id="supplies" class="py-12 px-4 md:px-8 bg-blue-50">
         <div class="max-w-7xl mx-auto">
             <h2 class="section-heading text-center">Essential Supplies for Seamless Operations</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
@@ -341,19 +365,19 @@
     </section>
 
     <!-- Footer Section - Call to Action -->
-    <footer class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-10 px-4 md:px-8 shadow-inner">
+    <footer id="contact" class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-10 px-4 md:px-8 shadow-inner">
         <div class="max-w-7xl mx-auto text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Sugar Factory?</h2>
             <p class="text-lg text-blue-100 mb-6">
                 Contact us today to discuss how our advanced automation solutions can drive efficiency, quality, and compliance for your operations.
             </p>
-            <a href="#" class="inline-block bg-white text-blue-800 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-100 hover:text-blue-900 transition duration-300 transform hover:scale-105">
+            <a href="mailto:ask.voltmatrix@gmail.com" class="inline-block bg-white text-blue-800 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-100 hover:text-blue-900 transition duration-300 transform hover:scale-105">
                 Get a Free Consultation
             </a>
             <div class="mt-8 text-blue-200">
                 <p>&copy; 2025 All rights reserved.</p>
-                <p>Email: ask.voltmatrix@gmail.com /p>
-                <p>Maharashtra, India</p>
+                <p>Email: ask.voltmatrix@gmail.com </p>
+                <p>📍 Maharashtra, India</p>
             </div>
         </div>
     </footer>
