@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Automation Solutions for Sugar Factories</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light background */
+            color: #333;
+        }
+        .section-heading {
+            @apply text-3xl md:text-4xl font-bold text-blue-800 mb-6 border-b-4 border-blue-500 pb-2;
+        }
+        .sub-section-heading {
+            @apply text-2xl font-semibold text-blue-700 mb-4;
+        }
+        .card {
+            @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center;
+        }
+        .card-image {
+            @apply w-full h-48 object-cover rounded-t-xl mb-4;
+        }
+        .feature-list {
+            @apply list-disc list-inside space-y-2 text-left;
+        }
+        .supply-item {
+            @apply bg-blue-50 p-4 rounded-lg shadow-sm flex items-center space-x-3;
+        }
+        .supply-icon {
+            @apply text-blue-600 text-2xl;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-8 px-4 md:px-8 shadow-lg">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+                    <span class="block">Precision Automation</span>
+                    <span class="block text-blue-200 text-3xl md:text-4xl">for the Modern Sugar Factory</span>
+                </h1>
+                <p class="text-blue-100 text-lg mt-2">
+                    Expertise in PLC, DCS, and Advanced Automation Systems
+                </p>
+            </div>
+            <!-- Company Logo Placeholder -->
+            <div class="flex-shrink-0">
+                <img src="https://placehold.co/150x150/0A2342/FFFFFF?text=YOUR+LOGO" alt="Company Logo" class="rounded-full border-4 border-blue-400">
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="py-12 px-4 md:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="section-heading">Unlock Unprecedented Efficiency and Quality</h2>
+            <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                As seasoned professionals in PLC, DCS, and industrial automation, we bring a wealth of knowledge and a wide spectrum of solutions tailored specifically for the sugar industry. Our comprehensive automation services are designed to revolutionize your factory's operations, ensuring optimal performance, enhanced safety, and superior product quality.
+            </p>
+        </div>
+    </section>
+
+    <!-- Automation Solutions Section -->
+    <section class="py-12 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="section-heading text-center">Our Core Automation Solutions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+
+                <!-- Mill Automation -->
+                <div class="card">
+                    <img src="https://placehold.co/400x250/AEC6CF/000000?text=Sugar+Mill+Automation" alt="Mill Automation" class="card-image" onerror="this.onerror=null;this.src='https://placehold.co/400x250/F3F4F6/1F2937?text=Mill+Automation';">
+                    <h3 class="sub-section-heading">1. Mill Automation</h3>
+                    <p class="text-gray-600">
+                        Mill automation transforms sugarcane milling into a high-performance, intelligently managed process. From automated cane feeding to precise juice flow stabilization, every function is optimized for maximum efficiency, safety, and reliability all with minimal manual intervention.
+                    </p>
+                </div>
+
+                <!-- Boiler Automation -->
+                <div class="card">
+                    <img src="https://placehold.co/400x250/C8A2C8/000000?text=Boiler+Control" alt="Boiler Automation" class="card-image" onerror="this.onerror=null;this.src='https://placehold.co/400x250/F3F4F6/1F2937?text=Boiler+Automation';">
+                    <h3 class="sub-section-heading">2. Boiler Automation</h3>
+                    <p class="text-gray-600">
+                        Boiler automation brings advanced control and real-time monitoring to the boiler house boosting efficiency, safety, and reliability. Featuring intelligent multi-element control and fully automated feeding systems, it ensures smooth, stable operations with full visibility and minimal manual intervention.
+                    </p>
+                </div>
+
+                <!-- Falling Film Evaporators (FFE) -->
+                <div class="card">
+                    <img src="https://placehold.co/400x250/F8DE7E/000000?text=FFE+Evaporation" alt="Falling Film Evaporators Automation" class="card-image" onerror="this.onerror=null;this.src='https://placehold.co/400x250/F3F4F6/1F2937?text=FFE+Automation';">
+                    <h3 class="sub-section-heading">3. Falling Film Evaporators (FFE) Automation</h3>
+                    <p class="text-gray-600">
+                        Experience next-level efficiency with FFE (Falling Film Evaporator) automation designed to take control of critical process parameters for consistent and optimized evaporation. From maintaining precise evaporator levels to managing inlet and recirculation flows, and even activating hot water during emergencies, intelligent automation minimizes manual intervention while maximizing performance.
+                    </p>
+                </div>
+
+                <!-- Pan Automation -->
+                <div class="card">
+                    <img src="https://placehold.co/400x250/BADA55/000000?text=Pan+Boiling+Control" alt="Pan Automation" class="card-image" onerror="this.onerror=null;this.src='https://placehold.co/400x250/F3F4F6/1F2937?text=Pan+Automation';">
+                    <h3 class="sub-section-heading">4. Pan Automation</h3>
+                    <p class="text-gray-600">
+                        Pan Automation revolutionizes the sugar boiling process by automating the control of critical parameters in vacuum pans such as steam pressure, vacuum levels, and massecuite level. The result? Consistent product quality, improved energy efficiency, and reduced dependence on manual operations.
+                    </p>
+                </div>
+
+                <!-- PRDS Automation -->
+                <div class="card">
+                    <img src="https://placehold.co/400x250/FFB347/000000?text=PRDS+Steam+Control" alt="PRDS Automation" class="card-image" onerror="this.onerror=null;this.src='https://placehold.co/400x250/F3F4F6/1F2937?text=PRDS+Automation';">
+                    <h3 class="sub-section-heading">5. PRDS Automation</h3>
+                    <p class="text-gray-600">
+                        PRDS (Pressure Reducing and Desuperheating Station) automation ensures precise delivery of steam at the right pressure and temperature customized for various process requirements across the plant. By automatically adjusting Superheated steam parameters, it enhances efficiency, safety, and process reliability.
+                    </p>
+                </div>
+
+                <!-- Condenser Automation -->
+                <div class="card">
+                    <img src="https://placehold.co/400x250/ADD8E6/000000?text=Condenser+Vacuum" alt="Condenser Automation" class="card-image" onerror="this.onerror=null;this.src='https://placehold.co/400x250/F3F4F6/1F2937?text=Condenser+Automation';">
+                    <h3 class="sub-section-heading">6. Condenser Automation</h3>
+                    <p class="text-gray-600">
+                        Condenser automation generates the required vacuum efficiently using only the optimum amount of water and power. By intelligently monitoring the temperature difference between vapor and condensate, as well as adapting to fluctuating injection water temperatures due to ambient conditions, it ensures stable vacuum performance with reduced resource consumption.
+                    </p>
+                </div>
+
+                <!-- Melter Automation -->
+                <div class="card">
+                    <img src="https://placehold.co/400x250/E0BBE4/000000?text=Sugar+Melting" alt="Melter Automation" class="card-image" onerror="this.onerror=null;this.src='https://placehold.co/400x250/F3F4F6/1F2937?text=Melter+Automation';">
+                    <h3 class="sub-section-heading">7. Melter Automation</h3>
+                    <p class="text-gray-600">
+                        Melter automation brings precision and efficiency to the raw sugar melting process. Designed for sugar refineries, it ensures consistent melt quality while minimizing energy consumption and maximizing process control—delivering smooth, reliable operation with less manual effort.
+                    </p>
+                </div>
+
+                <!-- pH Automation -->
+                <div class="card">
+                    <img src="https://placehold.co/400x250/98FB98/000000?text=pH+Control" alt="pH Automation" class="card-image" onerror="this.onerror=null;this.src='https://placehold.co/400x250/F3F4F6/1F2937?text=pH+Automation';">
+                    <h3 class="sub-section-heading">8. pH Automation</h3>
+                    <p class="text-gray-600">
+                        pH automation ensures precise pH control throughout the juice clarification process—guaranteeing pure, crystal-white sugar every time. With a proven multi-loop control at both the lime and sulphitation stages, and automated lime dosing directly proportional to juice flow and final pH, it delivers unmatched consistency and efficiency.
+                    </p>
+                </div>
+
+                <!-- Centrifugal Feed Automation -->
+                <div class="card">
+                    <img src="https://placehold.co/400x250/FFDDC1/000000?text=Centrifugal+Feed" alt="Centrifugal Feed Automation" class="card-image" onerror="this.onerror=null;this.src='https://placehold.co/400x250/F3F4F6/1F2937?text=Centrifugal+Feed';">
+                    <h3 class="sub-section-heading">9. Centrifugal Feed Automation</h3>
+                    <p class="text-gray-600">
+                        Centrifugal feed automation ensures accurate & consistent feeding to centrifugal machines, optimizing separation efficiency while reducing manual oversight. Automated controls maintain ideal feed rates, improving product quality and enhancing operational stability.
+                    </p>
+                </div>
+
+                <!-- Steam Head Sugar Silo Automation -->
+                <div class="card">
+                    <img src="https://placehold.co/400x250/DDA0DD/000000?text=Sugar+Silo+Mgmt" alt="Steam Head Sugar Silo Automation" class="card-image" onerror="this.onerror=null;this.src='https://placehold.co/400x250/F3F4F6/1F2937?text=Sugar+Silo+Automation';">
+                    <h3 class="sub-section-heading">10. Steam Head Sugar Silo Automation</h3>
+                    <p class="text-gray-600">
+                        Steam Head Sugar Silo automation optimizes the handling and discharge of sugar from silos, ensuring smooth flow while preventing blockages and product degradation. Automated controls maintain ideal temperature and moisture levels, preserving Sugar quality and streamlining unloading operations.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Monitoring Systems Section -->
+    <section class="py-12 px-4 md:px-8 bg-blue-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="section-heading text-center">Online Monitoring Systems</h2>
+            <p class="text-lg text-gray-700 text-center mb-8">
+                Ensure full environmental compliance and real-time data insight across critical infrastructure with our integrated online monitoring solutions, as per CPCB and SPCB norms.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="sub-section-heading">System Capabilities</h3>
+                    <ul class="feature-list text-gray-600">
+                        <li>Online Waste Water Monitoring System</li>
+                        <li>Online Emission Monitoring System</li>
+                        <li>Online Ambient Air Quality Monitoring System</li>
+                        <li>Telemetry Flow Meters (as per CGWA norms)</li>
+                        <li>Piezometers (as per CGWA norms)</li>
+                        <li>Seamless Online Connectivity with CPCB & SPCB Servers</li>
+                    </ul>
+                    <img src="https://placehold.co/400x200/FF6961/FFFFFF?text=Environmental+Monitoring" alt="Monitoring Dashboard" class="mt-6 rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x200/F3F4F6/1F2937?text=Monitoring+Dashboard';">
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="sub-section-heading">Key Monitoring Areas</h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li>
+                            <strong>1. Effluent & Sewage Monitoring:</strong> Continuous monitoring of water quality at treatment plant outlets. Automated data sharing with CPCB/SPCB servers.
+                        </li>
+                        <li>
+                            <strong>2. Emission Monitoring:</strong> Stack-mounted sensors for continuous dust and gas emission tracking. Real-time readings in mg/Nm3 or kg/hr to meet pollution norms.
+                        </li>
+                        <li>
+                            <strong>3. Ambient Air Monitoring (AQMS):</strong> Tracks air quality: SO2, NOx, CO, O3, PM, etc. Also measures temperature, wind, pressure, and rainfall.
+                        </li>
+                        <li>
+                            <strong>4. Telemetry Flow Meters:</strong> Cloud-based flow measurement as per CGWA norms. Real-time usage data for better water management.
+                        </li>
+                        <li>
+                            <strong>5. Piezometers:</strong> Monitor groundwater level and quality (TDS, pH, EC). Supports CGWA compliance and water governance.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IT Solutions Section -->
+    <section class="py-12 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="section-heading text-center">Intelligent IT Solutions for Your Enterprise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="sub-section-heading">Our Services</h3>
+                    <ul class="feature-list text-gray-600">
+                        <li>Website Development</li>
+                        <li>Enterprise Resource Planning (ERP) System</li>
+                        <li>Manufacturing Execution System (MES)</li>
+                        <li>Accounting Application</li>
+                        <li>Online Examination System</li>
+                        <li>Education Administration and Accounting System</li>
+                    </ul>
+                    <img src="https://placehold.co/400x200/77DD77/FFFFFF?text=IT+Solutions+Software" alt="IT Solutions" class="mt-6 rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x200/F3F4F6/1F2937?text=IT+Solutions';">
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="sub-section-heading">Our Software Products & Features</h3>
+                    <ul class="feature-list text-gray-600">
+                        <li><strong>Edigicloud Online Monitoring System</strong></li>
+                        <li><strong>IIoT based Industrial Data</strong></li>
+                    </ul>
+                    <h4 class="text-xl font-semibold text-blue-600 mt-4 mb-2">Key Features:</h4>
+                    <ul class="feature-list text-gray-600">
+                        <li>Efficiency-Driven</li>
+                        <li>Quality-Centric</li>
+                        <li>Comprehensive IIoT Integration</li>
+                        <li>Monitoring and Reporting</li>
+                        <li>Software as a Service (SaaS)</li>
+                        <li>Predictive Maintenance Focused</li>
+                        <li>Supply Chain Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supplies Section -->
+    <section class="py-12 px-4 md:px-8 bg-blue-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="section-heading text-center">Essential Supplies for Seamless Operations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+
+                <!-- VFD -->
+                <div class="supply-item">
+                    <span class="supply-icon">&#9881;</span> <!-- Gear icon -->
+                    <div>
+                        <h4 class="font-semibold text-lg text-gray-800">VFD (Variable Frequency Drive)</h4>
+                        <ul class="list-disc list-inside text-sm text-gray-600">
+                            <li>ABB</li>
+                            <li>Yaskawa</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Weighing & Bagging Systems -->
+                <div class="supply-item">
+                    <span class="supply-icon">&#128204;</span> <!-- Pushpin icon -->
+                    <div>
+                        <h4 class="font-semibold text-lg text-gray-800">Weighing & Bagging Systems</h4>
+                        <ul class="list-disc list-inside text-sm text-gray-600">
+                            <li>Bagging/Stitching Machines</li>
+                            <li>Auto Weighing & Bagging Machine</li>
+                            <li>Bag Stitching/Closing Machine</li>
+                            <li>Stitching Conveyor</li>
+                            <li>Electronic Type Weight Bridge</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Flow Meters -->
+                <div class="supply-item">
+                    <span class="supply-icon">&#128210;</span> <!-- Flow icon -->
+                    <div>
+                        <h4 class="font-semibold text-lg text-gray-800">Flow Meters</h4>
+                        <ul class="list-disc list-inside text-sm text-gray-600">
+                            <li>Mass Type</li>
+                            <li>Magnetic Type</li>
+                            <li>Orifice Type</li>
+                            <li>Venturi Type</li>
+                            <li>Vortex Type</li>
+                            <li>Mechanical Type</li>
+                            <li>Telemetry Type (As Per CGWA Authority Norms)</li>
+                            <li>Non-Telemetry Type (As Per CGWA Authority Norms)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Control Valves -->
+                <div class="supply-item">
+                    <span class="supply-icon">&#128295;</span> <!-- Valve icon -->
+                    <div>
+                        <h4 class="font-semibold text-lg text-gray-800">Control Valves</h4>
+                        <ul class="list-disc list-inside text-sm text-gray-600">
+                            <li>Pneumatic Control Valve</li>
+                            <li>On/Off Valve</li>
+                            <li>Globe Valve</li>
+                            <li>Butterfly Valve</li>
+                            <li>V Notch Valve</li>
+                            <li>Iris Valve</li>
+                            <li>Ball Valve</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sensors & Transmitters -->
+                <div class="supply-item">
+                    <span class="supply-icon">&#128269;</span> <!-- Sensor icon -->
+                    <div>
+                        <h4 class="font-semibold text-lg text-gray-800">Sensors & Transmitters</h4>
+                        <ul class="list-disc list-inside text-sm text-gray-600">
+                            <li>Temperature & Humidity</li>
+                            <li>Level</li>
+                            <li>Speed</li>
+                            <li>Flow</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section - Call to Action -->
+    <footer class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-10 px-4 md:px-8 shadow-inner">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Sugar Factory?</h2>
+            <p class="text-lg text-blue-100 mb-6">
+                Contact us today to discuss how our advanced automation solutions can drive efficiency, quality, and compliance for your operations.
+            </p>
+            <a href="#" class="inline-block bg-white text-blue-800 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-100 hover:text-blue-900 transition duration-300 transform hover:scale-105">
+                Get a Free Consultation
+            </a>
+            <div class="mt-8 text-blue-200">
+                <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+                <p>Email: info@yourcompany.com | Phone: +91-XXXXXXXXXX</p>
+                <p>Address: Your Company Address, Pune, Maharashtra, India</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
